@@ -8,14 +8,23 @@ use PhpCsFixer\Finder;
 
 class PHPCSFixer_Config {
 	public string $scan_dir;
+
 	public Config $config;
+
 	public Finder $finder;
+
 	public bool $config_risky_allowed = true;
+
 	public string $config_indent = "\t";
+
 	public bool $config_using_cache = false;
+
 	public string $finder_name = '*.php';
+
 	public bool $finder_ignore_dot_files = true;
+
 	public bool $finder_ignore_vcs = true;
+
 	public array $rules = [
 		'array_indentation' => true,
 		'array_syntax' => [
@@ -40,7 +49,7 @@ class PHPCSFixer_Config {
 			'elements' => [
 				'const' => 'one',
 				'method' => 'one',
-				'property' => 'only_if_meta',
+				'property' => 'one',
 				'trait_import' => 'none',
 			],
 		],
