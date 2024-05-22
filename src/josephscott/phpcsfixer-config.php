@@ -9,9 +9,9 @@ use PhpCsFixer\Finder;
 class PHPCSFixer_Config {
 	public string $scan_dir;
 
-	public Config $config;
+	public object $config;
 
-	public Finder $finder;
+	public object $finder;
 
 	public bool $config_risky_allowed = true;
 
@@ -194,7 +194,7 @@ class PHPCSFixer_Config {
 
 	public function build_config() : void {
 		$this->config = ( new Config )
-			->setFinder( $this->finder )
+			->setFinder( $this->finder ) // @phpstan-ignore-line
 			->setRules( $this->rules )
 			->setRiskyAllowed( $this->config_risky_allowed )
 			->setIndent( $this->config_indent )
