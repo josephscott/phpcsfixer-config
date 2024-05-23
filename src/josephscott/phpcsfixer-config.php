@@ -3,9 +3,6 @@ declare( strict_types = 1 );
 
 namespace JosephScott;
 
-use PhpCsFixer\Config;
-use PhpCsFixer\Finder;
-
 class PHPCSFixer_Config {
 	public string $scan_dir;
 
@@ -193,7 +190,12 @@ class PHPCSFixer_Config {
 	}
 
 	public function build_config() : void {
-		$this->config = ( new Config )
+		$this->config = ( new \PhpCsFixer\Config )
+			// The type hints in phpcsfixer might be wrong, it is
+			// asking for something else, but this still works.
+			// This is how they recommend doing it
+			// https://cs.symfony.com/doc/config.html#the-simplest-config
+			// so ignore this for now
 			->setFinder( $this->finder ) // @phpstan-ignore-line
 			->setRules( $this->rules )
 			->setRiskyAllowed( $this->config_risky_allowed )
@@ -220,14 +222,14 @@ class PHPCSFixer_Config {
 			}
 		}
 
-		$this->finder = Finder::create()
+		$this->finder = ( new \PhpCsFixer\Finder() )
 			->in( $dirs )
 			->name( $this->finder_name )
 			->ignoreDotFiles( $this->finder_ignore_dot_files )
 			->ignoreVCS( $this->finder_ignore_vcs );
 	}
 
-	public function get_config() : Config {
+	public function get_config() : object {
 		$this->build_finder();
 		$this->build_config();
 
