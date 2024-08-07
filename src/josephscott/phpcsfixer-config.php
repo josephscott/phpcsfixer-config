@@ -62,6 +62,7 @@ class PHPCSFixer_Config {
 		'declare_equal_normalize' => [
 			'space' => 'single',
 		],
+		'declare_strict_types' => true,
 		'elseif' => true,
 		'encoding' => true,
 		'full_opening_tag' => true,
