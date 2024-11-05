@@ -89,9 +89,11 @@ class PHPCSFixer_Config {
 			'strategy' => 'no_multi_line',
 		],
 		'native_function_casing' => true,
+		/*
 		'native_function_invocation' => [
 			'scope' => 'namespaced',
 		],
+ */
 		'no_alias_functions' => true,
 		'no_extra_blank_lines' => [
 			'tokens' => [
