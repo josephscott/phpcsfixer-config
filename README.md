@@ -1,5 +1,7 @@
 # phpcsfixer-config
 
+<img src="https://github.com/josephscott/phpcsfixer-config/actions/workflows/tests.yml/badge.svg">
+
 ### Install
 
 ```
