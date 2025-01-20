@@ -139,7 +139,10 @@ class PHPCSFixer_Config {
 		'normalize_index_brace' => true,
 		'not_operator_with_successor_space' => true,
 		'object_operator_without_whitespace' => true,
-		'ordered_imports' => ['sort_algorithm' => 'alpha'],
+		'ordered_imports' => [
+			'imports_order' => [ 'const', 'class', 'function' ],
+			'sort_algorithm' => 'alpha'
+		],
 		'psr_autoloading' => false,
 		'phpdoc_indent' => true,
 		'phpdoc_inline_tag_normalizer' => true,

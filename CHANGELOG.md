@@ -3,6 +3,7 @@
 
 ## ??? : ????
 - Tests via Github Actions
+- Set 'ordered_imports' -> 'imports_order' to `[ 'const', 'class', 'function' ]`
 
 ## 0.0.3 : 2024-11-04
 - Turn off `native_function_invocation`
