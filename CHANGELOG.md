@@ -1,7 +1,7 @@
 # Changelog josephscott/phpcsfixer-config
 
 
-## ??? : ????
+## 0.0.4 : 2025-01-20
 - Tests via Github Actions
 - Set 'ordered_imports' -> 'imports_order' to `[ 'const', 'class', 'function' ]`
 
