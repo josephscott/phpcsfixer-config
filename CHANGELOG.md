@@ -1,6 +1,9 @@
 # Changelog josephscott/phpcsfixer-config
 
 
+## 0.0.5 : 24 Jan 2026
+- Move php-cs-fixer from `require-dev` to `require` in composer
+
 ## 0.0.4 : 2025-01-20
 - Tests via Github Actions
 - Set 'ordered_imports' -> 'imports_order' to `[ 'const', 'class', 'function' ]`

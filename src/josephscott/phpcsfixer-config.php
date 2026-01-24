@@ -141,7 +141,7 @@ class PHPCSFixer_Config {
 		'object_operator_without_whitespace' => true,
 		'ordered_imports' => [
 			'imports_order' => [ 'const', 'class', 'function' ],
-			'sort_algorithm' => 'alpha'
+			'sort_algorithm' => 'alpha',
 		],
 		'psr_autoloading' => false,
 		'phpdoc_indent' => true,
