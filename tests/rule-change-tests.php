@@ -1,7 +1,7 @@
 <?php
 declare( strict_types = 1 );
 
-test( 'rule-change', function () {
+test( 'rule-change', function() {
 	$fixer_config = new JosephScott\PHPCSFixer_Config( __DIR__ );
 
 	$fixer_config->rules['array_indention'] = false;

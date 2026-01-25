@@ -67,7 +67,9 @@ class PHPCSFixer_Config {
 		'encoding' => true,
 		'full_opening_tag' => true,
 		'fully_qualified_strict_types' => false,
-		'function_declaration' => true,
+		'function_declaration' => [
+			'closure_function_spacing' => 'none',
+		],
 
 		'type_declaration_spaces' => true,
 		'general_phpdoc_tag_rename' => true,
