@@ -2,6 +2,7 @@
 
 ## dev
 - Bump lib versions
+- Avoid deprecation warning ( replace `visibility_required` with `modifier_keywords`
 
 ## 0.0.6 : 24 Jan 2026
 - Set `closure_function_spacing` to `none`
