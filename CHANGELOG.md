@@ -1,6 +1,6 @@
 # Changelog josephscott/phpcsfixer-config
 
-## dev
+## 0.0.7 : 13 Jun 2026
 - Bump lib versions
 - Avoid deprecation warning ( replace `visibility_required` with `modifier_keywords`
 
