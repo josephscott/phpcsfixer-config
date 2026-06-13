@@ -1,5 +1,7 @@
 # Changelog josephscott/phpcsfixer-config
 
+## dev
+- Bump lib versions
 
 ## 0.0.6 : 24 Jan 2026
 - Set `closure_function_spacing` to `none`
