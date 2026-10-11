@@ -1,5 +1,11 @@
 # Changelog josephscott/phpcsfixer-config
 
+## 0.0.8 : 10 Oct 2026
+- Bump php-cs-fixer to 3.95.27 ( supports `sebastian/diff` 9, needed for Pest 5 / PHPUnit 13 )
+- Bump dev libs: Pest 5.3.1, PHPStan 2.3.1
+- Replace deprecated PHPUnit `cacheResult` with `recordTestRunHistory`
+- CI: test on PHP 8.4 and 8.5 ( Pest 5 requires PHP 8.4+ )
+
 ## 0.0.7 : 13 Jun 2026
 - Bump lib versions
 - Avoid deprecation warning ( replace `visibility_required` with `modifier_keywords`
